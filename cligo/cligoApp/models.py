@@ -29,9 +29,22 @@ Message_week numeric
 '''
 
 class Hospital (models.Model):
+    REGION_LIST= (
+                    ('gt accra','Greater Accra'),
+                    ('ashanti','Ashanti'),
+                    ('eastern','Eastern'),
+                    ('western','Western'),
+                    ('central','Central'),
+                    ('northern','Northern'),
+                    ('upEast','Upper East'),
+                    ('upWest','Upper West'),
+                    ('volta','Volta Region'),
+                    ('brong','Brong Ahafo')
+                    )
     name = models.CharField(max_length = 100)
     center_code = models.IntegerField()
     contact_number = models.CharField(max_length = 10)
+    region = models.CharField(max_length = 20, choices=REGION_LIST)
     location = models.CharField(max_length = 50)
     
     def __unicode__(self):
