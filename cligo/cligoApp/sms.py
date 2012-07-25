@@ -44,7 +44,12 @@ def handle_cligo_sms(sms):
         print "failure"
         notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body='From cligo! Please check your input for commas eg. Name, centercode, number_of_weeks(reg. Elvis, Kolebu, 5)')
         notify.send()
-        
+    
+    
+    '''
+    
+    
+    '''
     #print "Cligo sms received, body: %s" % sms.body
     print "###########################################"
     #print "Were going to send one back!"
