@@ -109,10 +109,16 @@ INSTALLED_APPS = (
     'cligoApp',                                     # Adding the app to the project
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'dj_simple_sms',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
 
+#python
+SMS_HANDLERS = (
+        'dj_simple_sms.sample_sms_handler',
+        'cligoApp.sms.handle_cligo_sms',
+    )
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.

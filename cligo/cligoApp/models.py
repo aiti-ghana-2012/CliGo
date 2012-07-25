@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import date              #to get the time 
 
 # Create your models here.
 '''
@@ -42,7 +43,7 @@ class Hospital (models.Model):
                     ('brong','Brong Ahafo')
                     )
     name = models.CharField(max_length = 100)
-    center_code = models.IntegerField()
+    center_code = models.CharField(max_length = 10)
     contact_number = models.CharField(max_length = 10)
     region = models.CharField(max_length = 20, choices=REGION_LIST)
     location = models.CharField(max_length = 50)
@@ -51,9 +52,16 @@ class Hospital (models.Model):
         return self.name
 
 class Messages(models.Model):
-    message = models.CharField(max_length = 160)
-    message_type = models.CharField(max_length = 50)
+    TYPES_LIST = (
+                  ('tips','Health Tip'),
+                  ('app','Appointment'),
+                  ('gen','General Information')
+                  )
+    message_type = models.CharField(max_length = 50,choices=TYPES_LIST)
+    message = models.TextField(max_length = 160)
     message_week = models.IntegerField()
+    
+    date_created = models.DateField(auto_now = True)
     
     def __unicode__(self):
         return self.message
@@ -62,9 +70,9 @@ class Subscriber (models.Model):
     number_of_weeks = models.IntegerField()
     name_of_subcriber = models.CharField(max_length = 50)
     telephone_number = models.CharField(max_length = 10)
+    registration_date = models.DateField(auto_now = True)
     
-    #Foreign keys
-    message = models.ForeignKey(Messages)
+    message = models.ManyToManyField(Messages)                  #many to many relation for message and subscriber
     center_code = models.ForeignKey(Hospital)
     
     def __unicode__(self):
