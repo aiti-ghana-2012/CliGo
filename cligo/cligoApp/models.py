@@ -1,5 +1,5 @@
 from django.db import models
-from datetime import date              #to get the time 
+#from datetime import date              #to get the time 
 
 # Create your models here.
 '''
@@ -77,3 +77,33 @@ class Subscriber (models.Model):
     
     def __unicode__(self):
         return self.name_of_subcriber
+    '''
+    def register_subscriber(self, message):
+        if len(message) == 4:
+        if Hospital.objects.get(center_code = message[2]):
+            if Subscriber.objects.get(telephone_number = message[0]):
+                print "user exists"
+                notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body="Welcome to cligo! You're already registered")
+                notify.send()
+            else:
+                new_subscriber = Subscriber(
+                                            telephone_number=message[0],
+                                            name_of_subcriber=message[1],
+                                            center_code=Hospital.objects.get(center_code = message[2]),
+                                            number_of_weeks= int(message[3])
+                                            )
+                new_subscriber.save()
+                print "user entered successfully"
+                notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body='Welcome to cligo! Your registration has been processed')
+                notify.send()
+        else:
+            print "error"
+            notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body='From cligo! Please check your center code.')
+            notify.send()
+            
+    else:
+        print "failure"
+        notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body='From cligo! Please check your input for commas eg. Name, centercode, number_of_weeks(reg. Elvis, Kolebu, 5)')
+        notify.send()
+        return True
+'''

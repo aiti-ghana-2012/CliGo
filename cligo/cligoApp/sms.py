@@ -10,12 +10,19 @@ from cligoApp.models import Subscriber, Hospital
 def handle_cligo_sms(sms):
     message = sms.from_number+ ', ' + sms.body
     message = [f.strip() for f in message.split(',')]
+    #pls = Subscriber.register_subscriber(message)
+    
+    '''if pls == True:
+        print "user entered successfully"   
+        notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body='Welcome to cligo! Your registration has been processed')
+        notify.send()'''
     
     if len(message) == 4:
         if Hospital.objects.get(center_code = message[2]):
-            if Subscriber.objects.get(telephone_number = message[0]):
+            
+            if Subscriber.objects.filter(telephone_number = message[0]) : 
                 print "user exists"
-                notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body="Welcome to cligo! You're already registered")
+                notify = models.SMS(to_number=  sms.from_number, from_number ='cligo', body="Welcome to cligo! You're already registered")
                 notify.send()
             else:
                 new_subscriber = Subscriber(
