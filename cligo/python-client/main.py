@@ -7,7 +7,7 @@ import os
 import sys
 import time
 
-DJANGO_KEY = 'a0c963e748b0480f86833d48ace78533'
+DJANGO_KEY = '9d47f88a3ad1468a8409f1124de6654c'
 DJANGO_URL = 'http://localhost:8000/sms/'
 
 ANDROID_PORT = 7800

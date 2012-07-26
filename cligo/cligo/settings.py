@@ -110,6 +110,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     'dj_simple_sms',
+    'django_cron',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -118,7 +119,10 @@ INSTALLED_APPS = (
 SMS_HANDLERS = (
         'dj_simple_sms.sample_sms_handler',
         'cligoApp.sms.handle_cligo_sms',
+        #'cligoApp.sendMessage.send_sms',
     )
+
+CRON_POLLING_FREQUENCY = 10
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.

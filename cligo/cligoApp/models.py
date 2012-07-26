@@ -71,39 +71,38 @@ class Subscriber (models.Model):
     name_of_subcriber = models.CharField(max_length = 50)
     telephone_number = models.CharField(max_length = 10)
     registration_date = models.DateField(auto_now = True)
+    day = models.CharField(max_length = 10)
     
     message = models.ManyToManyField(Messages)                  #many to many relation for message and subscriber
     center_code = models.ForeignKey(Hospital)
     
     def __unicode__(self):
         return self.name_of_subcriber
+    
     '''
-    def register_subscriber(self, message):
+    def register_subscriber(self, sms_from_number, sms_body):
+        message = sms_from_number+ ', ' + sms_body
+        message = [f.strip() for f in message.split(',')]
+        
         if len(message) == 4:
-        if Hospital.objects.get(center_code = message[2]):
-            if Subscriber.objects.get(telephone_number = message[0]):
-                print "user exists"
-                notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body="Welcome to cligo! You're already registered")
-                notify.send()
+            if Hospital.objects.get(center_code = message[2]):
+                if Subscriber.objects.filter(telephone_number = message[0]) : 
+                    print "user exists"
+                    return "Exists"
+                else:
+                    new_subscriber = Subscriber(
+                                                telephone_number=message[0],
+                                                name_of_subcriber=message[1],
+                                                center_code=Hospital.objects.get(center_code = message[2]),
+                                                number_of_weeks= int(message[3])
+                                                )
+                    new_subscriber.save()
+                    print "user entered successfully"
+                    return "Successful"
             else:
-                new_subscriber = Subscriber(
-                                            telephone_number=message[0],
-                                            name_of_subcriber=message[1],
-                                            center_code=Hospital.objects.get(center_code = message[2]),
-                                            number_of_weeks= int(message[3])
-                                            )
-                new_subscriber.save()
-                print "user entered successfully"
-                notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body='Welcome to cligo! Your registration has been processed')
-                notify.send()
+                print "Center Error"
+                return "Center Error"          
         else:
-            print "error"
-            notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body='From cligo! Please check your center code.')
-            notify.send()
-            
-    else:
-        print "failure"
-        notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body='From cligo! Please check your input for commas eg. Name, centercode, number_of_weeks(reg. Elvis, Kolebu, 5)')
-        notify.send()
-        return True
-'''
+            print "Message Error"
+            return "Message Error"
+        '''

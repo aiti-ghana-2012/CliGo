@@ -6,16 +6,11 @@ Created on Jul 25, 2012
 
 from dj_simple_sms import models
 from cligoApp.models import Subscriber, Hospital
+from getDay import getDay
 
-def handle_cligo_sms(sms):
+def handle_cligo_sms(sms):    
     message = sms.from_number+ ', ' + sms.body
     message = [f.strip() for f in message.split(',')]
-    #pls = Subscriber.register_subscriber(message)
-    
-    '''if pls == True:
-        print "user entered successfully"   
-        notify = models.SMS(to_number=sms.from_number, from_number ='cligo', body='Welcome to cligo! Your registration has been processed')
-        notify.send()'''
     
     if len(message) == 4:
         if Hospital.objects.get(center_code = message[2]):
@@ -29,7 +24,8 @@ def handle_cligo_sms(sms):
                                             telephone_number=message[0],
                                             name_of_subcriber=message[1],
                                             center_code=Hospital.objects.get(center_code = message[2]),
-                                            number_of_weeks= int(message[3])
+                                            number_of_weeks= int(message[3]),
+                                            day = getDay().get_day()
                                             )
                 new_subscriber.save()
                 print "user entered successfully"
@@ -46,12 +42,6 @@ def handle_cligo_sms(sms):
         notify.send()
     
     
-    '''
     
-    
-    '''
-    #print "Cligo sms received, body: %s" % sms.body
-    print "###########################################"
-    #print "Were going to send one back!"
     
     

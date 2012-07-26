@@ -1,4 +1,7 @@
 from django.conf.urls import patterns, include, url
+#cron addtition
+import django_cron
+django_cron.autodiscover()
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin

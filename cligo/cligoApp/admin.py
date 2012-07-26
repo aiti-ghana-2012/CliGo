@@ -13,7 +13,7 @@ class MessagesAdmin (admin.ModelAdmin):
     search_fields = ['message']                                                         #where searches are made into
     
 class SubscriberAdmin (admin.ModelAdmin):
-    list_display = ('name_of_subcriber','registration_date','number_of_weeks','telephone_number')
+    list_display = ('name_of_subcriber','registration_date','day','number_of_weeks','telephone_number',)
     list_filter = ('number_of_weeks','registration_date')
     
     fieldsets = [
