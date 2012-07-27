@@ -1,4 +1,8 @@
 # Django settings for cligo project.
+import os
+
+PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -47,7 +51,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = 'static/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -55,6 +59,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
+    os.path.join(SITE_ROOT, 'assets'),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -94,6 +99,7 @@ ROOT_URLCONF = 'cligo.urls'
 WSGI_APPLICATION = 'cligo.wsgi.application'
 
 TEMPLATE_DIRS = (
+    os.path.join(PROJECT_ROOT, 'templates/'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -111,6 +117,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'dj_simple_sms',
     'django_cron',
+    'blog',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -122,7 +129,7 @@ SMS_HANDLERS = (
         #'cligoApp.sendMessage.send_sms',
     )
 
-CRON_POLLING_FREQUENCY = 10
+CRON_POLLING_FREQUENCY = 3
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.

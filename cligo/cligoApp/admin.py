@@ -21,9 +21,9 @@ class SubscriberAdmin (admin.ModelAdmin):
                                       'classes': ['collapse']})]
 
 class HospitalAdmin(admin.ModelAdmin):
-    list_display = ('name','region','center_code')
+    list_display = ('name','region','town_or_village','center_code','district','website')
     list_filter = ('region',)
-    
+        
 admin.site.register(Hospital,HospitalAdmin)
 admin.site.register(Messages,MessagesAdmin)
 admin.site.register(Subscriber,SubscriberAdmin)

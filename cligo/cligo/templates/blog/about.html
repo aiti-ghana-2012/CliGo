@@ -1,0 +1,58 @@
+{% extends 'blog/index.html'%}
+{% block navigation %}
+
+<li><a href='../'>Home</a></li>
+<li><a href='../product/'>Products</a></li>
+<li class="menu_active"><a href='../about/'>About</a></li>
+<li><a href='../team/'>Team</a></li>
+{% endblock %}
+<!-- contents starts here -->
+	{% block content %}
+<div id='content_body'>
+	<!-- content top left -->
+	<div id='content_left'>
+		<p>
+			<span class='page_title1'>About </span>
+			<span class='page_title2'>The Team</span>
+		</p>
+	</div>
+	<!-- contents slider starts here -->
+	<div id='slider_shadow'>
+		<img id='content_slider' src='/static/blog/images/bg3.jpg' height='280' width='600'/>
+	</div>
+	<!-- contents slider ends here -->
+	<!-- contents slider right -->
+	<div id='content_right'>
+		<p class='content_title'>
+			Afiday
+		</p>
+		<p class='content_title_sub'>
+			 Team
+		</p>
+		<br>
+		<p>
+		<b>
+			Our commitment is to provide innovative solutions for the African Community
+		</b>
+		</p><br>
+		<p>
+			Vivamus sit amet odio pellentesque odio faucibus tristique. Morbi facilisis, ligula a faucibus pellentesque,
+			orci justo consequat massa, sit amet dapibus dolor diam viverra mi. Aenean porttitor, lectus at dapibus egestas,
+			tellus ipsum rhoncus orci, eu vestibulum nisi orci quis nunc.
+			<br>
+			<br>
+			Pellentesque odio faucibus tristique. Morbi facilisis, ligula a faucibus pellentesque, orci justo consequat massa,
+			sit amet dapibus dolor diam viverra mi.Aenean porttitor, lectus at dapibus egestas, tellus ipsum rhoncus orci. 
+		</p>
+	</div>
+	<!-- contents Right ends here -->
+	<!-- clear -->
+	<div class='clear'> </div>
+	<!-- Clear -->
+	<!-- clear -->
+	<div class='clear'> </div>
+	<!-- endclear -->
+</div>
+	{% endblock %}
+<!-- content ends here -->
+<!-- footer -->

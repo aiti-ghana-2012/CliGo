@@ -31,22 +31,31 @@ Message_week numeric
 
 class Hospital (models.Model):
     REGION_LIST= (
-                    ('gt accra','Greater Accra'),
-                    ('ashanti','Ashanti'),
-                    ('eastern','Eastern'),
-                    ('western','Western'),
-                    ('central','Central'),
-                    ('northern','Northern'),
-                    ('upEast','Upper East'),
-                    ('upWest','Upper West'),
-                    ('volta','Volta Region'),
-                    ('brong','Brong Ahafo')
-                    )
-    name = models.CharField(max_length = 100)
-    center_code = models.CharField(max_length = 10)
-    contact_number = models.CharField(max_length = 10)
+                    ('Greater Accra Region','Greater Accra Region'),
+                    ('Ashanti Region','Ashanti Region'),
+                    ('Eastern Region','Eastern Region'),
+                    ('Western Region','Western Region'),
+                    ('Central Region','Central Region'),
+                    ('Northern Region','Northern Region'),
+                    ('Upper East Region','Upper East Region'),
+                    ('Upper West Region','Upper West Region'),
+                    ('Volta Region','Volta Region Region'),
+                    ('Brong Ahafo Region','Brong Ahafo Region')
+                )
+    
+    STATUS_LIST= (
+                    ('Active','Active'),
+                    ('In Active','In Active')
+                )
+    name = models.CharField(max_length = 120)
     region = models.CharField(max_length = 20, choices=REGION_LIST)
-    location = models.CharField(max_length = 50)
+    town_or_village = models.CharField(max_length = 40)
+    district = models.CharField(max_length = 40, blank = True)
+    
+    website = models.CharField(max_length = 50, blank = True)
+    center_code = models.CharField(max_length = 10)
+    #status = models.CharField(max_length = 15, default = "In Active", choices=STATUS_LIST)
+    contact_number = models.CharField(max_length = 10, blank = True)
     
     def __unicode__(self):
         return self.name
@@ -73,7 +82,7 @@ class Subscriber (models.Model):
     registration_date = models.DateField(auto_now = True)
     day = models.CharField(max_length = 10)
     
-    message = models.ManyToManyField(Messages)                  #many to many relation for message and subscriber
+    message = models.ManyToManyField(Messages, related_name = "message_received")                  #many to many relation for message and subscriber
     center_code = models.ForeignKey(Hospital)
     
     def __unicode__(self):

@@ -19,5 +19,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^cligo/', include('cligoApp.urls')),
     url(r'^sms/', include('dj_simple_sms.urls')),
+    url(r'^affiday/', include('blog.urls')),
     
 )

@@ -1,0 +1,412 @@
+[
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 28,
+		"fields": {
+			"name": "Abenkyiman Clinic",
+			"region": "Ashanti Region",
+			"town_or_village": "Anwia-Nkwanta",
+			"district": "Bekwai Municipal",
+			"website": "website",
+			"center_code": "as1",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 27,
+		"fields": {
+			"name": "Akormaa Memorial SDA Hospital",
+			"region": "Ashanti Region",
+			"town_or_village": "Kortwia-Abodom",
+			"district": "Amansie West",
+			"website": "website",
+			"center_code": "as2",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 26,
+		"fields": {
+			"name": "Ahmadiyya Hospital",
+			"region": "Ashanti Region",
+			"town_or_village": "Asokore Mampong",
+			"district": "Sekyere East District",
+			"website": "website",
+			"center_code": "as3",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 25,
+		"fields": {
+			"name": "Asafo-Agyei Hospital",
+			"region": "Ashanti Region",
+			"town_or_village": "Kumasi",
+			"district": "Kumasi Metropolitan",
+			"website": "website",
+			"center_code": "as4",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 24,
+		"fields": {
+			"name": "Ashanti Goldfields Company Hospital",
+			"region": "Ashanti Region",
+			"town_or_village": "Obuasi",
+			"district": "Obuasi Municipal",
+			"website": "website",
+			"center_code": "as5",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 23,
+		"fields": {
+			"name": "Bryant Mission Hospital",
+			"region": "Ashanti Region",
+			"town_or_village": "Obuasi-Adansi",
+			"district": "Obuasi Municipal",
+			"website": "website",
+			"center_code": "as6",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 22,
+		"fields": {
+			"name": "County Hospital",
+			"region": "Ashanti Region",
+			"town_or_village": "Kumasi-Abrepo",
+			"district": "Kumasi Metropolitan",
+			"website": "website",
+			"center_code": "as7",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 21,
+		"fields": {
+			"name": "District Hospital",
+			"region": "Ashanti Region",
+			"town_or_village": "Bekwai",
+			"district": "Bekwai Municipal",
+			"website": "website",
+			"center_code": "as8",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 29,
+		"fields": {
+			"name": "District Hospital",
+			"region": "Ashanti Region",
+			"town_or_village": "Mampong-Ashanti",
+			"district": "Mampong Municipal",
+			"website": "website",
+			"center_code": "as9",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 20,
+		"fields": {
+			"name": "District Hospital",
+			"region": "Ashanti Region",
+			"town_or_village": "Mampong-Ashanti",
+			"district": "Mampong Municipal",
+			"website": "website",
+			"center_code": "as10",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 19,
+		"fields": {
+			"name": "District Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Goaso",
+			"district": "Asunafo North Municipal",
+			"website": "website",
+			"center_code": "ba1",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 18,
+		"fields": {
+			"name": "District Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Kintampo",
+			"district": "Kintampo North Municipal",
+			"website": "website",
+			"center_code": "ba2",
+			"contact_number": "000"
+			}
+	},
+	
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 17,
+		"fields": {
+			"name": "Government Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Atebubu",
+			"district": "Atebubu - Amantin",
+			"website": "website",
+			"center_code": "ba3",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 1,
+		"fields": {
+			"name": "Government Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Bechem",
+			"district": "Tano South",
+			"website": "website",
+			"center_code": "ba4",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 2,
+		"fields": {
+			"name": "Government Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Sampa",
+			"district": "Jaman North",
+			"website": "website",
+			"center_code": "ba5",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 3,
+		"fields": {
+			"name": "Holy Family Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Berekum",
+			"district": "Berekum Municipal",
+			"website": "website",
+			"center_code": "ba6",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 4,
+		"fields": {
+			"name": "Holy Family Teaching Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Techiman",
+			"district": "Techiman Municipal",
+			"website": "website",
+			"center_code": "ba7",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 5,
+		"fields": {
+			"name": "Lexis Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Sunyani",
+			"district": "Sunyani Municipal",
+			"website": "website",
+			"center_code": "ba8",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 6,
+		"fields": {
+			"name": "Methodist Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Wenchi",
+			"district": "Wenchi Municipal",
+			"website": "website",
+			"center_code": "ba9",
+			"contact_number": "000"
+			}
+	},
+	
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 7,
+		"fields": {
+			"name": "Municipal Hospital",
+			"region": "Brong Ahafo Region",
+			"town_or_village": "Sunyani",
+			"district": "Sunyani Municipal",
+			"website": "website",
+			"center_code": "ba10",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 8,
+		"fields": {
+			"name": "Ankaful Leprosy/General Hospital",
+			"region": "Central Region",
+			"town_or_village": "Cape Coast",
+			"district": "Cape Coast Metropolitan",
+			"website": "website",
+			"center_code": "ce1",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 9,
+		"fields": {
+			"name": "Ankaful Psychiatric Hospital",
+			"region": "Central Region",
+			"town_or_village": "Cape Coast",
+			"district": "Cape Coast Metropolitan",
+			"website": "website",
+			"center_code": "ce2",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 10,
+		"fields": {
+			"name": "Catholic Hospital",
+			"region": "Central Region",
+			"town_or_village": "Apam",
+			"district": "Gomoa West",
+			"website": "apamhospital.com",
+			"center_code": "ce3",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 11,
+		"fields": {
+			"name": "Central Regional Hospital",
+			"region": "Central Region",
+			"town_or_village": "Cape Coast",
+			"district": "Cape Coast Metropolitan",
+			"website": "website",
+			"center_code": "ce4",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 12,
+		"fields": {
+			"name": "District Hospital",
+			"region": "Central Region",
+			"town_or_village": "Cape Coast",
+			"district": "Cape Coast Metropolitan",
+			"website": "website",
+			"center_code": "ce5",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 13,
+		"fields": {
+			"name": "District Hospital",
+			"region": "Central Region",
+			"town_or_village": "Saltpond",
+			"district": "Mfantsiman Municipal",
+			"website": "website",
+			"center_code": "ce7",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 14,
+		"fields": {
+			"name": "Dunkwa Goldfields Hospital",
+			"region": "Central Region",
+			"town_or_village": "Dunkwa-on-Offin",
+			"district": "Upper Denkyira",
+			"website": "website",
+			"center_code": "ce8",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 15,
+		"fields": {
+			"name": "Dunkwa Government Hospital",
+			"region": "Central Region",
+			"town_or_village": "Dunkwa-on-Offin",
+			"district": "Upper Denkyira",
+			"website": "website",
+			"center_code": "ce9",
+			"contact_number": "000"
+			}
+	},
+	
+	{
+		"model": "cligoApp.Hospital",
+		"pk": 16,
+		"fields": {
+			"name": "Government Hospital",
+			"region": "Central Region",
+			"town_or_village": "Abura-Dunkwa",
+			"district": "Abura/Asebu/Kwamankese",
+			"website": "website",
+			"center_code": "ce10",
+			"contact_number": "000"
+			}
+	}
+]
+			
+		
