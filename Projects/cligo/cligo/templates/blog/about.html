@@ -1,0 +1,59 @@
+{% extends 'blog/index.html'%}
+{% block navigation %}
+
+<li><a href='../'>Home</a></li>
+<li><a href='../product/'>Products</a></li>
+<li class="menu_active"><a href='../about/'>About</a></li>
+<li><a href='../team/'>Team</a></li>
+{% endblock %}
+<!-- contents starts here -->
+	{% block content %}
+<div id='content_body'>
+	<!-- content top left -->
+	<div id='content_left'>
+		<p>
+			<span class='page_title1'>About </span>
+			<span class='page_title2'>The Team</span>
+		</p>
+	</div>
+	<!-- contents slider starts here -->
+	<div id='slider_shadow'>
+		<img id='content_slider' src='/static/blog/images/Afiday Logo.png' height='280' width='600'/>
+	</div>
+	<!-- contents slider ends here -->
+	<!-- contents slider right -->
+	<div id='content_right'>
+		<p class='content_title'>
+			Afiday
+		</p>
+		<p class='content_title_sub'>
+			 Team
+		</p>
+		<br>
+		<p>
+		<b>
+			Our commitment is to provide innovative solutions for the African Community
+		</b>
+		</p><br>
+		<p>
+		Afiday is a company that sprung out of the MIT-AITI initiative. 
+		It specifically began in July 2012. The name "Afiday" is a refined name to the Twi meaning of the word "machine" which is "afidie." 
+		The reason behind the choice is that machines are efficient in doing work and in making our lifes easy and more productive. 
+			<br>
+		As a result, we, at Afiday, are poised at making a change in the lives of ordinary people by providing simple mobile solutions 
+		that helps makes lives better.
+		 A poster child to this claude is CliGo, which provides periodic health tips, and very soon appointments, to pregnant women in Ghana.
+			<br>
+		</p>
+	</div>
+	<!-- contents Right ends here -->
+	<!-- clear -->
+	<div class='clear'> </div>
+	<!-- Clear -->
+	<!-- clear -->
+	<div class='clear'> </div>
+	<!-- endclear -->
+</div>
+	{% endblock %}
+<!-- content ends here -->
+<!-- footer -->

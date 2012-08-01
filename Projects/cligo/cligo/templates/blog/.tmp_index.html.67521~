@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<link href='/static/blog/css/style.css' type='text/css' rel='stylesheet'>
+		<link href='/static/blog/css/sheets.css' type='text/css' rel='stylesheet'>
+		<style type='text/css'>
+			
+		</style>
+		<title>Affiday</title>
+	</head>
+	<body>
+		<!-- main body starts here -->
+		<div id='main_body'>
+			<!-- header starts here -->
+			<div id='header'>
+				<!-- logo starts here -->
+				<div id='logo'>
+					<a href='index.html'>
+						<img title='Affiday' alt='Affiday' src='/static/blog/images/logo'>
+					</a>
+				</div>
+				<!-- logo ends here -->
+				<!-- menu starts here -->
+				<div class='menu'>
+					<ul>
+						<li class="menu_active"><a href=''>Home</a></li>
+						<li><a href='product/'>Products</a></li>
+						<li><a href='about/'>About</a></li>
+						<li><a href='team/'>Team</a></li>
+					</ul>
+				</div>
+				<!-- menu ends here -->
+				<!-- clear -->
+				<div class='clear'> </div>
+				<!-- clear -->
+			</div>
+			<!-- header ends here -->
+			{% block content %}
+			<!-- contents starts here -->
+			<div id='content_body'>
+				<!-- contents slider starts here -->
+				<div id='slider_shadow'>
+					<img id='content_slider' src='/static/blog/images/bg3.jpg' height='280' width='600'/>
+				</div>
+				<!-- contents slider ends here -->
+				<!-- contents slider right -->
+				<div id='content_right'>
+					<p class='content_title'>
+						Innovative solutions
+					</p>
+					<p class='content_title_sub'>
+						 By Ghanaians
+					</p>
+					<br>
+					<p>
+					<b>
+						Our commitment is to provide innovative solutions for the African Community
+					</b>
+					</p><br>
+					<p>
+						Vivamus sit amet odio pellentesque odio faucibus tristique. Morbi facilisis, ligula a faucibus pellentesque,
+						orci justo consequat massa, sit amet dapibus dolor diam viverra mi. Aenean porttitor, lectus at dapibus egestas,
+						tellus ipsum rhoncus orci, eu vestibulum nisi orci quis nunc.
+						<br>
+						<br>
+						Pellentesque odio faucibus tristique. Morbi facilisis, ligula a faucibus pellentesque, orci justo consequat massa,
+						sit amet dapibus dolor diam viverra mi.Aenean porttitor, lectus at dapibus egestas, tellus ipsum rhoncus orci. 
+					</p>
+				</div>
+				<!-- contents Right ends here -->
+				<!-- clear -->
+				<div class='clear'> </div>
+				<!-- Clear -->
+				
+			</div>
+			<!-- content ends here -->
+			{% endblock %}
+			<!-- footer -->
+			<div id='footer'>
+				<p id='footer_links'>
+					<a href='index.html'>Home</a> | 
+					<a href='products.html'>Products</a> | 
+					<a href='about.html'>About</a> | 
+					<a href='team.html'>Team</a>
+				</p>
+				<p id='footer_copyright'>
+					Copyright (c) 2012
+					<a href='#'>AffidayDesigns</a>
+					All rights reserved.
+				</p>
+			</div>
+		</div>
+		<!-- mainbody ends here -->
+	</body>
+</html>

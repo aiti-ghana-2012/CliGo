@@ -1,0 +1,15 @@
+[
+	{
+		"model": "cligoApp.Hospital",
+		"fields": {
+			"name": "entername",
+			"region": "enter Region",
+			"town_or_village": "enter town",
+			"district": "enter district",
+			"website": "enter website",
+			"center_code": 000,
+			"contact_number": 000
+	}
+]
+			
+		

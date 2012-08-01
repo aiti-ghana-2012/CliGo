@@ -1,0 +1,78 @@
+{% extends 'blog/index.html'%}
+{% block navigation %}
+
+<li><a href='../'>Home</a></li>
+<li><a href='../product/'>Products</a></li>
+<li><a href='../about/'>About</a></li>
+<li class="menu_active"><a href='../team/'>Team</a></li>
+{% endblock %}
+<!-- contents starts here -->
+	{% block content %}
+<div id='content_body'>
+	<!-- content top left -->
+	<div id='content_left'>
+		<p>
+			<span class='page_title1'>About </span>
+			<span class='page_title2'>The Team</span>
+		</p>
+	</div>
+	<!-- contents slider starts here -->
+	<div id='slider_shadow'>
+		<img id='content_slider' src='/static/blog/images/dd.png' height='280' width='600'/>
+	</div>
+	<!-- contents slider ends here -->
+	<!-- contents slider right -->
+	<div id='content_right'>
+		<p class='content_title'>
+			Afiday
+		</p>
+		<p class='content_title_sub'>
+			 Team
+		</p>
+		<br>
+		<p>
+		<b>
+			Our strength lies in our unity and diverse academic backgrounds 
+		</b>
+		</p><br>
+		<p>
+			Afiday is an innovative team made up of 5 result-oriented individuals. These members of the
+team are very resolute in making a difference with mobile
+technology. Most of the team members, though still students, are very passionate
+about issues that affect our community which suggests their energy and enthusiasm
+for acquiring knowledge and implementing solutions to impact the community and the
+society at large.
+
+
+			<br>
+			<br>
+			The diversity of background of the individual members of the team makes Afiday an ‘all
+round’ team in terms of expertise. Having team members with these varied skills, Afiday
+is an ‘almost enviable’ team of entrepreneurs and programmers.
+ 
+		</p>
+	</div>
+	<!-- contents Right ends here -->
+	<!-- clear -->
+	<div class='clear'> </div>
+	<!-- Clear -->
+	{% for team in team_list %}
+	<div class='team'>
+		<p>
+			<img class='team_pic' src='/static/blog/images/box.jpg'/> 
+			<b class='team_title'>{{ team.name }}</b>
+			<br>
+			<br>
+			<p>
+				{{ team.brief_description }}
+			</p>
+		</p>
+	</div>
+	{% endfor %}
+	<!-- clear -->
+	<div class='clear'> </div>
+	<!-- endclear -->
+</div>
+	{% endblock %}
+<!-- content ends here -->
+<!-- footer -->

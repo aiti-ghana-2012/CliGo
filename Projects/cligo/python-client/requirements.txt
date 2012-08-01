@@ -1,0 +1,2 @@
+requests
+-e git+http://github.com/louissobel/python-termstyle.git#egg=termstyle

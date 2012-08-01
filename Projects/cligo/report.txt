@@ -1,0 +1,19 @@
+1. Created a Cligo project.
+2. Created and installed Cligo App named (cligoApp).
+3. Created models within the cligo app.
+4. installed sms app (from louis).
+
+5. Sending sms messages from (louis) device to django project.
+6. Sending sms messages from django project to (louis) device.
+7. Validating and storing of received messages into "subscriber" table /database.
+
+
+8. Create an app to send messages to customer based.
+	i. The validity period of message subscriber
+9. 
+
+To be accomplished:
+1.  
+	a. The validity period of message to subscriber.
+2. Incrementing the week period of subscriber every week.
+3. comparing the week period to the message period.

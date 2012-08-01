@@ -1,0 +1,161 @@
+#main_body {
+    width: 960px;
+    margin-top: 18px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+#header {
+    padding: 32px 0px 0px;
+    color: rgb(11, 64, 103);
+    text-align: left;
+    height: 120px;
+}
+
+#logo {
+    width: 186px;
+    height: 66px;
+    float: left;
+    margin-top: 7px;
+}
+
+.menu {
+    font-family: calibri;
+    list-style-type: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(68, 68, 68);
+    padding-top: 31px;
+    position: relative;
+    height: 25px;
+}
+
+.menu li {
+    list-style-type: none;
+    float: left;
+    margin-left: 15px;
+}
+
+.menu a {
+    color: rgb(0, 56, 99);
+    padding: 5px 20px;
+}
+
+.menu a:hover {
+    color: rgb(26, 117, 188);
+    padding: 5px 20px;
+}
+
+li.menu_active a {
+    color: rgb(26, 117, 188);
+    padding: 5px 20px;
+    border-right: 1px solid rgb(0, 56, 99);
+    border-left: 1px solid rgb(0, 56, 99);
+}
+
+.clear {
+    clear: both;
+}
+
+#content_body {
+    text-align: left;
+    padding: 20px 20px 30px;
+    margin-left: 0px;
+    background: rgb(255, 255, 255);
+}
+
+#content_slider{
+	width:600px;
+	float: left;
+	height: 280px;
+	position: relative;
+}
+
+#content_right {
+    width: 300px;
+    color: #666666;
+    margin-left: 20px;
+    float: right;
+}
+
+#content_left {
+    width: 600px;
+    float: left;
+    position: relative;
+}
+
+.content_title {
+	font-family: calibri;
+	font-size: 30px;
+	color: #003863;
+	text-transform: uppercase;
+	margin-top: -7px;
+}
+
+.content_title_sub {
+    font-family: calibri;
+    font-size: 30px;
+    color: #1a75bc;
+    text-transform: uppercase;
+    margin-top: -5px;
+}
+
+.page_title1 {
+	font-family: "Eras Light ITC";
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 56, 99);
+    text-transform: uppercase;
+}
+
+.page_title2 {
+    font-family: calibri;
+    font-size: 25px;
+    color: rgb(26, 117, 188);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#footer {
+    padding: 8px 20px 20px;
+    color: rgb(11, 64, 103);
+    font-size: 11px;
+}
+
+#footer_links {
+    color: rgb(11, 64, 103);
+    text-decoration: none;
+    float: left;
+}
+
+#footer_links a {
+    color: rgb(11, 64, 103);
+    text-decoration: none;
+}
+
+#footer_copyright {
+    float: right;
+    color: rgb(11, 64, 103);
+    font-size: 11px;
+}
+
+.team{
+	margin-top: 15px;
+	padding: 5px;	
+	border-left: solid 2px rgb(11, 64, 103);
+	width: 32%;
+	float: left;
+}
+
+.team_pic{
+	float: left;
+	padding-right: 10px;
+}
+
+.team_title {
+	font-family: calibri;
+	font-size: 15px;
+	color: #003863;
+	text-transform: uppercase;
+	margin-top: -7px;
+}

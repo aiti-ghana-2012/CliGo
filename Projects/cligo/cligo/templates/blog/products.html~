@@ -1,0 +1,60 @@
+{% extends 'blog/index.html'%}
+{% block navigation %}
+
+<li><a href='../'>Home</a></li>
+<li class="menu_active"><a href='../product/'>Products</a></li>
+<li><a href='../about/'>About</a></li>
+<li><a href='../team/'>Team</a></li>
+{% endblock %}
+<!-- contents starts here -->
+	{% block content %}
+<div id='content_body'>
+	<!-- content top left -->
+	<div id='content_left'>
+		<p>
+			<span class='page_title1'>About </span>
+			<span class='page_title2'> Our Product</span>
+		</p>
+	</div>
+	<!-- contents slider starts here -->
+	<div id='slider_shadow'>
+		<img id='content_slider' src='/static/blog/images/bg3.png' height='220' width='600'/>
+	</div>
+	<!-- contents slider ends here -->
+	<!-- contents slider right -->
+	<div id='content_right'>
+		<p class='content_title'>
+			Product
+		</p>
+		<p class='content_title_sub'>
+			 CliGO
+		</p>
+		<br>
+		<p>
+		<b>
+			Our commitment is to provide innovative solutions for the African Community
+		</b>
+		</p><br>
+		<p>
+			CliGO is an SMS based system that sends health tips on diet and precautionary
+measures to expectant mothers who are subscribed. This service is free and would
+be funded with grants from governmental and non-governmental organisations. The
+system sends messages in three forms: General health tips, Dietary health tips and Preventive and precautionary health tips
+
+			<br>
+			<br>
+			Pellentesque odio faucibus tristique. Morbi facilisis, ligula a faucibus pellentesque, orci justo consequat massa,
+			sit amet dapibus dolor diam viverra mi.Aenean porttitor, lectus at dapibus egestas, tellus ipsum rhoncus orci. 
+		</p>
+	</div>
+	<!-- contents Right ends here -->
+	<!-- clear -->
+	<div class='clear'> </div>
+	<!-- Clear -->
+	<!-- clear -->
+	<div class='clear'> </div>
+	<!-- endclear -->
+</div>
+	{% endblock %}
+<!-- content ends here -->
+<!-- footer -->
